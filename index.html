@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    <h1>調查單電子問卷</h1>
+    <form>
+        <p>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:<input type="text" size="40" name="UserName"></p>
+        <p>電子信箱:<input type="text" value="ex:user@mailserver" size="40" name="E-mail"></p>
+        <p>年齡:<input type="radio" value="未滿18歲" name="UserAge">未滿18歲
+               <input type="radio" value="18歲-25歲" name="UserAge" checked>18歲-25歲
+               <input type="radio" value="26歲-32歲" name="UserAge">26歲-32歲
+               <input type="radio" value="32歲以上" name="UserAge">32歲以上</p>
+        <p>興趣:<input type="checkbox" value="打籃球" name="Favorite[]" checked>打籃球
+               <input type="checkbox" value="打棒球" name="Favorite[]">打棒球
+               <input type="checkbox" value="打排球" name="Favorite[]">打排球
+               <input type="checkbox" value="打桌球" name="Favorite[]">打桌球</p> 
+        <p>請填寫你的自傳:<br><textarea name="Bio" cols="50" rows="4">123456</textarea></p>
+        <p>請選擇你的專長:(可複選)
+        <select name="skills[]" size="4" multiple>
+          <option value="國文" selected>國文
+          <option value="英文">英文
+          <option value="數學">數學
+          <option value="自然">自然
+        </select>
+        </p>
+        <form>
+            輸入密碼    :<input type="password"name="userPWD" size="10">
+        <input type="submit" value="送出">
+        <input type="reset" value="重填">
+    </form>
+    </body>
+</html>
